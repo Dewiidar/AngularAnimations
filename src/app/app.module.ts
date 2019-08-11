@@ -15,7 +15,7 @@ import { AdvancedComponent } from './advanced/advanced.component';
         HomeComponent,
         BasicComponent,
         ContainedComponent,
-        AdvancedComponent
+        AdvancedComponent,
     ],
     imports: [
         BrowserModule,
