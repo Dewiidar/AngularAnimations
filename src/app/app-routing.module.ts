@@ -6,11 +6,11 @@ import {ContainedComponent} from './contained/contained.component';
 import {AdvancedComponent} from './advanced/advanced.component';
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
-  {path: 'basic', component: BasicComponent},
-  {path: 'contained', component: ContainedComponent},
-  {path: 'advanced', component: AdvancedComponent},
-  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  {path: 'home', component: HomeComponent, data: { animation: {value: 'home'} } },
+  {path: 'basic', component: BasicComponent, data: { animation: {value: 'basic'} }},
+  {path: 'contained', component: ContainedComponent, data: { animation: {value: 'contained'} }},
+  {path: 'advanced', component: AdvancedComponent, data: { animation: {value: 'advanced'} }},
+  {path: '', redirectTo: 'home', pathMatch: 'full', data: { animation: {value: 'home'} }},
 ];
 
 @NgModule({
