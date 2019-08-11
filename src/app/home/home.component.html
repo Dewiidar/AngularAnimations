@@ -5,7 +5,7 @@
 <button type="button" class="btn btn-outline-secondary" (click)="changeState('parallel')">Parallel State</button>
 
 
-<div class="square" [@changeState]="currentState">
+<div class="square" [@changeState]="currentState" (@changeState.start)="animationBegin($event)" (@changeState.done)="animationEnd($event)">
     <div class="content">
         Hello!
     </div>

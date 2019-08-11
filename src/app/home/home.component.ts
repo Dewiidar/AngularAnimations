@@ -51,4 +51,12 @@ export class HomeComponent implements OnInit {
     changeState(value: string): void {
         this.currentState = value;
     }
+
+    animationBegin(event: Event) {
+        console.log(event);
+    }
+
+    animationEnd(event: Event) {
+        console.log(event);
+    }
 }
