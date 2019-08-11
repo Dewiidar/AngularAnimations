@@ -1,0 +1,12 @@
+<p>home works!</p>
+
+<button type="button" class="btn btn-outline-primary" (click)="changeState('first')">State 1</button>
+<button type="button" class="btn btn-outline-secondary" (click)="changeState('second')">State 2</button>
+<button type="button" class="btn btn-outline-secondary" (click)="changeState('parallel')">Parallel State</button>
+
+
+<div class="square" [@changeState]="currentState">
+    <div class="content">
+        Hello!
+    </div>
+</div>
